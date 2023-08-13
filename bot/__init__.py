@@ -28,7 +28,7 @@ class Config(object):
   ADMIN = list(set(int(x) for x in os.environ.get("ADMIN", "5629750139").split()))
   OWNER = list(set(int(x) for x in os.environ.get("OWNER").split()))
   TEMP = 'temp/'
-  DOWNLOAD_DIR = str(os.environ.get("DOWNLOAD_DIR"))
+  DOWNLOAD_DIR = str(os.environ.get("DOWNLOAD_DIR", "Bot/plugins/downloads"))
 
 
 LOG_FILE_NAME = "Logs.txt"
