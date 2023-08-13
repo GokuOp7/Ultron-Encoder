@@ -10,7 +10,7 @@ from pymongo import MongoClient
 if os.path.exists('config.env'):
   load_dotenv('config.env')
 try:
-  os.makedirs('encodes/')
+  os.makedirs('Bot/plugins/encodes')
   os.makedirs('temp/')
   os.makedirs('downloads/')
 except:
