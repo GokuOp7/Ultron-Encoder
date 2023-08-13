@@ -75,3 +75,8 @@ if not Config.DOWNLOAD_DIR.endswith("/"):
   Config.DOWNLOAD_DIR = str() + "/"
 if not os.path.isdir(Config.DOWNLOAD_DIR):
   os.makedirs(Config.DOWNLOAD_DIR)
+
+if not Config.ENCODE_DIR.endswith("/"):
+  Config.ENCODE_DIR = str() + "/"
+if not os.path.isdir(Config.ENCODE_DIR):
+  os.makedirs(Config.ENCODE_DIR)
