@@ -29,7 +29,7 @@ class Config(object):
   OWNER = list(set(int(x) for x in os.environ.get("OWNER").split()))
   TEMP = 'temp/'
   DOWNLOAD_DIR = str(os.environ.get("DOWNLOAD_DIR", "Bot/plugins/downloads"))
-
+  ENCODE_DIR = str(os.environ.get("ENCODE_DIR", "Bot/plugins/encodes"))
 
 LOG_FILE_NAME = "Logs.txt"
 
