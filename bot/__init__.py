@@ -18,7 +18,7 @@ except:
 
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", 4018758))
+  API_ID = str(os.environ.get("API_ID", 4018758))
   API_HASH = str(os.environ.get("API_HASH", "622bba3cf046315531f71f9d97fa6c2a"))
   BOT_TOKEN = str(os.environ.get("BOT_TOKEN", "6942815361:AAHwpmE7ThoaKWJJyRIrIZHRXOaxooCXGd8"))
   DATABASE_URL = str(os.environ.get("DATABASE_URL", "mongodb+srv://Nikhil:lol@cluster0.opa09.mongodb.net/?retryWrites=true&w=majority"))
